@@ -6,7 +6,6 @@ import EmojiObjectsOutlinedIcon from "@mui/icons-material/EmojiObjectsOutlined";
 import CalculateOutlinedIcon from "@mui/icons-material/CalculateOutlined";
 import LaptopSharpIcon from "@mui/icons-material/LaptopSharp";
 import ExpandMoreSharpIcon from "@mui/icons-material/ExpandMoreSharp";
-import ExpandLessSharpIcon from "@mui/icons-material/ExpandLessSharp";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";

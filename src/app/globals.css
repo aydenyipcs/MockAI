@@ -61,5 +61,5 @@ body {
 }
 
 .thinScrollbar::-webkit-scrollbar-thumb {
-  background-color: darkgrey; /* Color of the scrollbar handle */
+  background-color: darkgrey;
 }

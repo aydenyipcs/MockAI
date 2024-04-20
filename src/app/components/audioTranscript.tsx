@@ -20,8 +20,6 @@ const AudioTranscript = ({
     setTime(currTime);
   };
 
-  const formattedDuration = formatTime(duration ? duration : 0);
-
   return (
     <div className="flex flex-col overflow-hidden">
       <div className="flex flex-row w-full mt-5">
@@ -67,7 +65,6 @@ const AudioTranscript = ({
           </div>
         ))}
       </div>
-      {/* <p className="italic text-right mb-5 mr-2">{`${formatTime(time)} : ${formattedDuration}`}</p> */}
     </div>
   );
 };
