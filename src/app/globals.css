@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 249, 250, 251;
+  --background-end-rgb: 250, 250, 250;  
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.link-style::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  opacity: 0;
+  transition: width 0.5s ease-out, opacity 0.5s ease-in;
+}
+
+.link-style:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; 
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.thinScrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+.thinScrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.thinScrollbar::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* Color of the scrollbar handle */
+}
