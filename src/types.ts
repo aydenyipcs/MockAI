@@ -46,7 +46,6 @@ interface AudioProps {
 interface TimelineProps {
   url: string;
   transcript: TranscriptEntries[];
-  code: [];
 }
 interface TranscriptEntries {
   time: number;

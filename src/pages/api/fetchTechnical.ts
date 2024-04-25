@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { technicalData } from "../../../public/mockData";
 
-export default function fetchHeaderData(
+export default function fetchTechnicalData(
   req: NextApiRequest,
   res: NextApiResponse<TechnicalProps>
 ) {

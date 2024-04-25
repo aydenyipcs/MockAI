@@ -1,16 +1,15 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { transcriptData } from "../../../public/mockData";
 
-export default function fetchHeaderData(
+export default function fetchTimelineData(
   req: NextApiRequest,
-  res: NextApiResponse<{url: string}>
+  res: NextApiResponse<TimelineProps>
 ) {
   const url = "/audio.wav"
 
   const data = {
     url: url,
     transcript: transcriptData,
-    coding: 'hello'
   }
   
   res.status(200).json(data);
